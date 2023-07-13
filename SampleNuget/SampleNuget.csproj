@@ -8,6 +8,8 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <!-- If all members are not documented, you can disable the compiler warnings -->
     <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <AssemblyName>DRHDEV.SampleNuget</AssemblyName>
+    <RootNamespace>DRHDEV.SampleNuget</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -19,6 +21,8 @@
 
     <!-- A list of tags to help the search engine to understand the content of the package -->
     <PackageTags>sample, library</PackageTags>
+
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -33,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
     <None Update="icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

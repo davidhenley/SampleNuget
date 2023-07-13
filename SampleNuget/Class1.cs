@@ -1,4 +1,4 @@
-﻿namespace SampleNuget;
+﻿namespace DRHDEV.SampleNuget;
 
 public class Class1
 {
